@@ -19,15 +19,15 @@ function getweather() {
         </div>
         <div class="image">
           <div class="feel-like-image">
-            <img src="feel-like.png" alt="feels like icon">
+             <img src="images/feel-like.png" alt="feels like icon">
                <strong class="feels-like-text"> Feels like ${data.main.feels_like}°C</strong>
           </div>
           <div class="humidity-image">
-            <img src="humidity.png" alt="humidity icon">
+             <img src="images/humidity.png" alt="humidity icon">
              <strong class="humidity-text">${data.main.humidity}%</strong>
           </div>
           <div class="wind-image">
-            <img src="wind.png" alt="wind icon">
+            <img src="images/wind.png" alt="wind icon">
              <strong class="wind-text">${isNaN(data.wind?.speed) ? "" : Math.round(data.wind.speed * 3.6) + " km/h"}</strong>
           </div>
         </div>
@@ -36,3 +36,4 @@ function getweather() {
       document.getElementById("weather-result").innerHTML = weatherInfo;
     });
 }
+
