@@ -36,17 +36,17 @@ function getweather() {
 
         <div class="image">
           <div class="feel-like-image">
-            <img src="images/feel-like.png">
+            <img src="feel-like.png">
             <strong>Feels like ${data.main.feels_like}°C</strong>
           </div>
 
           <div class="humidity-image">
-            <img src="images/humidity.png">
+            <img src="humidity.png">
             <strong>${data.main.humidity}%</strong>
           </div>
 
           <div class="wind-image">
-            <img src="images/wind.png">
+            <img src="wind.png">
             <strong>
               ${isNaN(data.wind?.speed) ? "" : Math.round(data.wind.speed * 3.6) + " km/h"}
             </strong>
@@ -62,5 +62,6 @@ function getweather() {
         `<p style="color:red;">Error fetching data</p>`;
     });
 }
+
 
 
