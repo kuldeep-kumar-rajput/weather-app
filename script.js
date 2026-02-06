@@ -41,7 +41,7 @@ function getweather() {
           </div>
 
           <div class="humidity-image">
-            <img src="humidity.png">
+            <img src="https://cdn-icons-png.flaticon.com/512/414/414974.png" alt="humidity icon">
             <strong>${data.main.humidity}%</strong>
           </div>
 
@@ -62,6 +62,7 @@ function getweather() {
         `<p style="color:red;">Error fetching data</p>`;
     });
 }
+
 
 
 
