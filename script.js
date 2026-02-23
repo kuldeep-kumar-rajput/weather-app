@@ -65,7 +65,18 @@ async function getweather() {
         <div class="wind-image">
           <img src="wind.png">
           <strong>${Math.round(current.wind.speed * 3.6)} km/h</strong>
-        </div>  
+        </div> 
+        <div class="humidity-image">
+          <img src="visibility-1.png">
+         <strong>${(current.visibility / 1000).toFixed(1)} km</strong>
+        </div>
+
+        <div class="wind-image">
+          <img src="barometer.png">
+         <strong>${current.main.pressure} hPa</strong>
+        </div> 
+        </div>
+        
     `;
 
     document.getElementById("weather-result").innerHTML = html;
@@ -75,4 +86,5 @@ async function getweather() {
       `<p style="color:red;">city is not found</p>`;
   }
 }
+
 
