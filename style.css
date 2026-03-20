@@ -11,11 +11,9 @@ body {
   justify-content: center;
   align-items: center;
   padding: 10px;
-  background: linear-gradient(0deg, #3366b6 30%, #00d4ff 100%);
 }
 
 .card {
-  
   padding: 25px 30px;
   border-radius: 20px;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
@@ -23,22 +21,8 @@ body {
   width: 100%;
   height: auto;
   color: #fff;
-  background-image: url("https://i.pinimg.com/736x/0a/15/82/0a158281950a4516178101bd4592e70a.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  animation: cChange 10s linear infinite;
+  background: linear-gradient(0deg, #6295e8 30%, #0ed3fa 100%);
 }
-
-@keyframes cChange {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 100% 50%;
-  }
-}
-
 .card h1 {
   font-size: 2.2rem;
   margin-bottom: 20px;
@@ -112,24 +96,37 @@ body {
 }
 
 .image {
-  display: flex;
+  display: grid;
   justify-content: space-around;
-  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
   flex-wrap: wrap;
   margin-top: 20px;
   gap: 20px;
+  align-items: center;
 }
-
+.card1 {
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 400px;
+  margin: auto;
+  margin-top: 40px;
+}
+.card1:hover {
+  border: 1px solid #0697a1;
+}
 .humidity-image,
 .wind-image,
 .feel-like-image {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  font-size: 12px;
-  gap: 5px;
-  background: linear-gradient(145deg, #1f456c, #3fa9f5, #6ec6ff);
-  border-radius: 4px;
+  text-align: center;
+  font-size: 10px;
+  gap: 3px;
+  border-radius: 8px;
+  padding: 15px;
+  min-height: 100px;
 }
 
 .humidity-image img,
@@ -137,13 +134,12 @@ body {
 .feel-like-image img {
   width: 80px;
   height: auto;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 .feel-like-image strong,
 .wind-image strong,
 .humidity-image strong {
-  color: black;
+  color: white;
+  font-size: 15px;
 }
 
 .humidity-text,
@@ -234,12 +230,3 @@ body {
     width: 60px;
   }
 }
-
-
-
-
-
-
-
-
-
