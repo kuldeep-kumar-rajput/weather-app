@@ -1,6 +1,7 @@
 async function getweather() {
   try {
     const city = document.getElementById("inputbox").value.trim();
+    document.getElementById("inputbox").value = "";
 
     if (!city) {
       alert("City name likho");
@@ -51,6 +52,7 @@ async function getweather() {
 
     html += `</div>`;
     html += `
+     <div class="card1">
       <div class="image">
         <div class="feel-like-image">
           <img src="feel-like.png">
@@ -76,6 +78,7 @@ async function getweather() {
          <strong>${current.main.pressure} hPa</strong>
         </div> 
         </div>
+     </div>
         
     `;
 
@@ -86,5 +89,3 @@ async function getweather() {
       `<p style="color:red;">city is not found</p>`;
   }
 }
-
-
